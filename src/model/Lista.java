@@ -116,6 +116,11 @@ public class Lista<T> implements ILista<T> {
 		No<T> elemento = getNo(posicao);
 		return elemento.dado;
 	}
+	
+	@Override
+	public void clean() {
+		primeiro = null;
+	}
 
 	private No<T> getNo(int posicao) throws Exception {
 		if (isEmpty()) {

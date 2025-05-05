@@ -11,5 +11,6 @@ public interface ILista<T> {
 	public void removeLast() throws Exception;
 	public void remove (int posicao)throws Exception;
 	public T get(int posicao) throws Exception;
+	public void clean ();
 	
 }
